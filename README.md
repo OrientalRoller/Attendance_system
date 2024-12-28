@@ -28,6 +28,7 @@ The **Attendance System** is a Python-based project that leverages facial recogn
 - The link to it is https://drive.google.com/file/d/19I-MZdctYKmVf3nu5Da3HS6KH5LBfdzG/view?usp=sharing
 - The above model is pre-trained.
 - **Note** the model must be saved in a folder named "insightface_model" and in the same directory all these files are.
+- I also used the cosine similarity algorithm to identify the faces
 
 
 ---
