@@ -1,59 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance System Project</title>
-</head>
-<body>
-    <h1>Attendance System</h1>
-    <p>The <strong>Attendance System</strong> is a Python-based project that leverages facial recognition to automate attendance management. Below are its key features:</p>
+# Attendance System
 
-    <h2>1. User Information Input</h2>
-    <ul>
-        <li>The system collects the following details from users:
-            <ul>
-                <li><strong>Name</strong></li>
-                <li><strong>Role</strong> (e.g., Student, Teacher, etc.)</li>
-                <li><strong>Photo Embeddings</strong> (facial feature vectors extracted from the user's photo)</li>
-            </ul>
-        </li>
-        <li>All user data is saved into a <strong>Redis database</strong> using the <code>save_and_retrieve_data_from_redis.ipynb</code> file.</li>
-    </ul>
+The **Attendance System** is a Python-based project that leverages facial recognition to automate attendance management. Below are its key features:
 
-    <h2>2. Attendance Logging</h2>
-    <ul>
-        <li>The system uses facial recognition to identify users in real time.</li>
-        <li>If a match is found:
-            <ul>
-                <li>The user's <strong>attendance</strong> is marked with the current <strong>date</strong> and <strong>time</strong>.</li>
-                <li>The attendance record is saved to the Redis database.</li>
-            </ul>
-        </li>
-    </ul>
+## Features
 
-    <h2>3. Storage in Redis</h2>
-    <ul>
-        <li><strong>User Registration:</strong> Stores user details and facial embeddings in Redis.</li>
-        <li><strong>Attendance Records:</strong> Logs attendance data (name, role, date, and time) for each user.</li>
-    </ul>
+### 1. User Information Input
+- The system collects the following details from users:
+  - **Name**
+  - **Role** (e.g., Student, Teacher, etc.)
+  - **Photo Embeddings** (facial feature vectors extracted from the user's photo)
+- All user data is saved into a **Redis database** using the `save_and_retrieve_data_from_redis.ipynb` file.
 
-    <h2>4. Face Embeddings with Buffalo_SC Model</h2>
-    <ul>
-        <li>The project uses the <strong>Buffalo_SC model</strong> to detect facial embeddings for accurate user identification.</li>
-        <li><strong>Note:</strong> The model is not included in the repository due to its large size.</li>
-        <li>You can download the Buffalo_SC model and add it to your project directory.</li>
-    </ul>
+### 2. Attendance Logging
+- The system uses facial recognition to identify users in real time.
+- If a match is found:
+  - The user's **attendance** is marked with the current **date** and **time**.
+  - The attendance record is saved to the Redis database.
 
-    <h2>How to Use</h2>
-    <ol>
-        <li>Clone the repository.</li>
-        <li>Download the Buffalo_SC model and place it in the appropriate directory (as instructed in the code).</li>
-        <li>Install the necessary dependencies using <code>pip install -r requirements.txt</code>.</li>
-        <li>Run the <code>save_and_retrieve_data_from_redis.ipynb</code> notebook to register users.</li>
-        <li>Run the main script to start the attendance system.</li>
-    </ol>
+### 3. Storage in Redis
+- **User Registration:** Stores user details and facial embeddings in Redis.
+- **Attendance Records:** Logs attendance data (name, role, date, and time) for each user.
 
-    <p>This system ensures efficient and accurate attendance management by combining facial recognition and fast data storage with Redis.</p>
-</body>
-</html>
+### 4. Face Embeddings with Buffalo_SC Model
+- The project uses the **Buffalo_SC model** to detect facial embeddings for accurate user identification.
+- **Note:** The model is not included in the repository due to its large size.
+- You can download the Buffalo_SC model and add it to your project directory.
+- The link to it is https://drive.google.com/file/d/19I-MZdctYKmVf3nu5Da3HS6KH5LBfdzG/view?usp=sharing
+- The above model is pre-trained.
+
+
+---
+
