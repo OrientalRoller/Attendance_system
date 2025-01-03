@@ -1,0 +1,10 @@
+numpy 
+pandas
+opencv-python
+scipy 
+matplotlib
+insightface
+redis
+scikit-learn
+jupyter
+
